@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .navbar {
+	display: flex;
+	justify-content: space-between; /* push the contents to opposite direction */
+	height: 60px;
+	padding: 10px 40px;
+	align-items: center;
+}
+
+header .navbar .website-title {
+	display: block;
+	font-family: "Roboto", serif;
+	padding: 20px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+header .navbar .user-links {
+	display: flex;
+	font-family: "Roboto", serif;
+	font-size: 12px;
+	gap: 20px;
+	align-items: center;
+}
+
+header .navbar .user-links p, header .navbar a {
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header .navbar a:hover {
+	color: black;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  /* Apply the animation to the whole body */
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+main {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+main .welcome .title {
+	font-size: 36px;
+	margin-bottom: 10px;
+	font-family: "Roboto", serif;
+}
+
+main .welcome .text-under-title {
+	color: #666;
+	margin-bottom: 40px;
+	font-family: "Roboto", serif;
+}
+
+main .cards .cards-container .card {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 28px;
+	margin-bottom: 20px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+main .cards .cards-container .card h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: "Roboto", serif;
+	font-weight: 700;
+}
+
+main .cards .cards-container .card p {
+	color: #666;
+	margin-bottom: 10px;
+	font-family: "Roboto", serif;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}

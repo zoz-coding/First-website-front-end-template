@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background: white;
+	padding: 3rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 300px;
+}
+
+p {
+	font-family: "Roboto", serif;
+}
+
+.container .title {
+	font-size: 28px;
+}
+
+.container .text-under-title {
+	font-size: 14px;
+	opacity: 0.5;
+	margin-top: 10px;
+}
+
+.container .text-at-bottom {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.container .text-at-bottom a {
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+label {
+	display: block;
+	font-family: "Roboto", serif;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	border: none;
+	padding: 8px 0;
+	background: transparent;
+	transition: border-color 0.3s;
+	outline: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	background-color: black;
+	font-family: "Roboto", serif;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+input[type="submit"]:hover {
+	background: #333;
+}
+
+input::placeholder {
+	font-family: "Roboto", serif;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+}
+
+input::focus::placeholder {
+	color: transparent;
+	transition: color 0.3s ease;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  /* Apply the animation to the whole body */
+  animation: fadeIn 0.5s ease-out forwards;
+}
